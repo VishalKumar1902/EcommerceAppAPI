@@ -1,26 +1,65 @@
-# E-Commerce API
+# E-commerce API
 
-This repository contains an E-Commerce API project built using Node.js, Express, and MongoDB. It supports user authentication, product management, cart operations, and order processing with role-based access for admin features.
-
-## Features
-
-- **Authentication**: Register, login, and secure routes using JWT.
-- **Product Management**: Fetch products for users.
-- **Cart Operations**: Add, update, and remove products from the cart.
-- **Order Management**: Place orders and manage order statuses.
-- **Role-based Access**: Admin-only routes for managing orders.
+This project is a backend API for an e-commerce platform, built with Node.js, Express.js, and MongoDB. It supports user authentication, product management, carts, and order management with role-based access control.
 
 ---
 
-## Installation and Setup
+## Features
+
+- User authentication and authorization (JWT-based).
+- Role-based access for admin functionality.
+- CRUD operations for products.
+- Cart management for authenticated users.
+- Order placement and order management.
+- Admin functionality for managing products and orders.
+
+---
+
+## Getting Started
+
+Follow the steps below to set up and run the project locally.
+
+---
 
 ### Prerequisites
-- [Node.js](https://nodejs.org/) and npm installed
-- [MongoDB](https://www.mongodb.com/) (local or cloud setup)
 
-### Steps
+Ensure you have the following installed:
+```bash
+Node.js (v14 or higher)
+MongoDB
+Git
+```
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/VishalKumar1902/EcommerceAppAPI.git
-   cd EcommerceAppAPI
+---
+
+### Installation Steps
+
+#### 1. Clone the Repository
+```bash
+git clone https://github.com/VishalKumar1902/EcommerceAppAPI.git
+cd EcommerceAppAPI
+```
+
+#### 2. Install Dependencies
+```bash
+npm install
+```
+
+#### 3. Configure Environment Variables
+Create a `.env` file in the root directory and configure the following variables:
+```bash
+PORT=5000
+MONGO_URI=mongodb://localhost:27017/rbacProject
+JWT_SECRET=your_jwt_secret
+```
+
+
+#### 4. Run the Application
+```bash
+node app.js
+```
+
+#### 5. Access the API
+```bash
+http://localhost:5000
+```
